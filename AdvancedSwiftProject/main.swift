@@ -60,6 +60,33 @@ copyOfStructJames.age = 52
 classJames.happyBirtday()
 //print(classJames.age)
 
-print(structJames.age)
+
+//print(structJames.age)
 structJames.happyBirthday()
-print(structJames.age)
+//print(structJames.age)
+
+
+
+//TUPLE birden fazla veriyi aynı koleksiyon içinde göstermeye yarıyor
+
+let myTuple = (1,3)
+print(myTuple.0)
+
+var myTuple2 = (1,3,5)
+myTuple2.2 = 10
+print(myTuple2.2)
+
+let myTuple3 = ("HH", 100)
+
+let myTuple4 = (10,[10,20,30])
+print(myTuple4.1[1])
+
+let myString : String?
+let predefineTuple : (String, String)
+predefineTuple.0 = "Hüseyin"
+predefineTuple.1 = "Höbek"
+print(predefineTuple)
+
+let newTuple = (name: "James", metalica: true)
+print(newTuple.metalica)
+print(newTuple.name)
