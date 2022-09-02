@@ -70,23 +70,92 @@ structJames.happyBirthday()
 //TUPLE birden fazla veriyi aynı koleksiyon içinde göstermeye yarıyor
 
 let myTuple = (1,3)
-print(myTuple.0)
+//print(myTuple.0)
 
 var myTuple2 = (1,3,5)
 myTuple2.2 = 10
-print(myTuple2.2)
+//print(myTuple2.2)
 
 let myTuple3 = ("HH", 100)
 
 let myTuple4 = (10,[10,20,30])
-print(myTuple4.1[1])
+//print(myTuple4.1[1])
 
 let myString : String?
 let predefineTuple : (String, String)
 predefineTuple.0 = "Hüseyin"
 predefineTuple.1 = "Höbek"
-print(predefineTuple)
+//print(predefineTuple)
 
 let newTuple = (name: "James", metalica: true)
-print(newTuple.metalica)
-print(newTuple.name)
+//print(newTuple.metalica)
+//print(newTuple.name)
+
+
+// Guard Let vs If Let 
+
+// Guard -> Negative daha kendine güvenli
+//If -> Positive
+
+let myNumber = "5"
+
+func convertToIntigerGuard (stringInput : String) -> Int {
+    guard let myInteger = Int(stringInput) else {
+        return 0
+    }
+        return myInteger
+}
+
+func convertToIntegerIf ( stringInput : String) -> Int {
+    if let myInteger = Int(stringInput) {
+        return myInteger
+    } else {
+        return 0
+    }
+}
+
+//print(convertToIntegerIf(stringInput: myNumber))
+//print(convertToIntigerGuard(stringInput: myNumber))
+
+
+
+//Switch
+/*
+let myNum = 11
+
+// remainder bölüm sonucu kalanı gösteriyor
+
+let myRemainder = myNum % 4
+print(myRemainder)
+
+if myRemainder == 1 {
+    print("it's 1")
+} else if myRemainder == 2 {
+    print("it's 2")
+
+} else if myRemainder == 3 {
+    print("it's 3")
+}
+
+
+switch myRemainder {
+case 1:
+    print("it's 1")
+case 2:
+    print("it's 2")
+case 3:
+    print("it's 3")
+default:
+    print("none of the above")
+}
+ */
+ 
+
+// Breakpoint (mola noktaları) kodumuzda bug ararken
+
+var x = 5
+print(x)
+
+x += 1
+print(x)
+
